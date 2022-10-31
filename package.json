@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests",
-    "test:watch": "npm -- --watch",
-    "test:staged": "npm -- --findRelatedTests",
-    "tes:ci": "npm -- --coverage"
+    "test:watch": "npm test -- --watch",
+    "test:staged": "npm test -- --findRelatedTests",
+    "tes:ci": "npm test -- --coverage"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
     "eslint": "^8.23.0",
     "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-standard": "^5.0.0",
