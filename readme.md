@@ -1,0 +1,1 @@
+husky não funcionou, foi preciso rodar "npx mrm lint-staged"
