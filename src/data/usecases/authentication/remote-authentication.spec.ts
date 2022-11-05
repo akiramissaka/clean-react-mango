@@ -1,7 +1,7 @@
 import { HttpPostClient } from './protocols/http/http-post-client'
 import { RemoteAuthentication } from './remote-authentication'
 
-console.log('dassdasdssss')
+console.log('dassdasd')
 
 describe('RemoteAuthentication', () => {
     test('Should call HttpPostClient with correct URL', async () => {
