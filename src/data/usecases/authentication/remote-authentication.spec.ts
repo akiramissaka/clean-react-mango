@@ -1,7 +1,7 @@
 import { HttpPostClient } from './protocols/http/http-post-client'
 import { RemoteAuthentication } from './remote-authentication'
 
-console.log('dasdasd')
+console.log('dassdasd')
 
 describe('RemoteAuthentication', () => {
     test('Should call HttpPostClient with correct URL', async () => {
@@ -15,6 +15,6 @@ describe('RemoteAuthentication', () => {
         const url = 'any_url'
         const sut = new RemoteAuthentication(url, httpPostClientSpy)
         await sut.auth()
-        expect(httpPostClientSpy.url).not.toBe(url)
+        expect(httpPostClientSpy.url).toBe(url)
     })
 })
