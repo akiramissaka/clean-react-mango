@@ -1,5 +1,14 @@
 {
-    "extends": "standard-with-typescript",
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "standard-with-typescript",
+        "plugin:react/recommended"
+    ],
+    "plugins": ["react"],
     "parserOptions": {
         "project": "./tsconfig.json"
     },
@@ -10,6 +19,8 @@
         "indent": ["error", 4, { "SwitchCase": 1 }],
         "@typescript-eslint/indent": ["error", 4],
         "@typescript-eslint/camelcase": "off",
-        "@typescript-eslint/method-signature-style": "off"
+        "@typescript-eslint/method-signature-style": "off",
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
     }
 }
